@@ -1,0 +1,27 @@
+2004-01-13 14:59  geocar
+
+	* pwho.c: poll now waits- this causes kernel blocks but at least
+	  keeps load down
+
+2003-04-21 18:27  geocar
+
+	* pwho.c: Also recognizes the word "NOT FOUND" as an indicator that
+	  something wasn't found (INFO)
+
+2003-02-27 21:49  geocar
+
+	* Makefile: Added deploy capabilities to make install
+
+2003-02-27 01:39  geocar
+
+	* .Makefile.swp: whoops. left my swapfile again....
+
+2003-02-27 01:38  geocar
+
+	* .Makefile.swp, Makefile, ht.c, ht.h, pwho.c: Initial revision
+
+2003-02-27 01:38  geocar
+
+	* .Makefile.swp, Makefile, ht.c, ht.h, pwho.c: Loaded into CVS
+	  (parallel whois tool)
+

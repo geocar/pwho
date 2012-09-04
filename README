@@ -1,0 +1,20 @@
+a parallel whois tool for programs.
+
+programs that need to do whois lookups to test availablity (because names can
+be registered that have no NS records) can interface with pwho.
+
+the input is simple:
+
+name[ whoisserver]
+
+where "name" is a query without spaces for "whoisserver", which MUST be
+an IPv4 address. input is line-separated.
+
+the output is simple:
+
+q 0 st
+
+where "q" is the input-line number in sequence-space, and "st" is one of:
+	permfail		- name is not registered
+	remotefail		- temporary error; (try again later?)
+	ok			- name IS registered
